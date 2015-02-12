@@ -1,0 +1,92 @@
+/* Inputs */
+
+td input {
+	clear: both;
+	padding: 0;
+	width:100%;
+	font-size: 90%;
+}
+
+
+/*Tables*/
+
+.rwd-table {
+	background: #F5F5F5;
+	border-radius: .4em;
+	overflow: hidden;
+	border: 1px solid #c4c4c4;
+	margin-top: 5px;
+	width: 100%;
+}
+
+.rwd-table thead tr{
+	border-top: 1px solid #ddd;
+ 	border-bottom: 1px solid #ddd;
+}
+
+.rwd-table tr {
+  cursor: pointer;
+}
+
+.rwd-table th:first-child{
+	/* cursor:pointer; */
+}
+
+.rwd-table th a{
+	cursor:pointer;
+	padding:15px;
+}
+
+.rwd-table th, .rwd-table td {
+  padding: .5em 1em;
+}
+
+.sorting-asc a:before, .rwd-table th a.asc:before {
+	content: '⇣ ' !important;
+}
+.sorting-desc a:before, .rwd-table th a.desc:before {
+	content: '⇡ ' !important;;
+}
+
+.rwd-table th a:before {
+	content: '⇣⇡ ';
+	font-size: 10px;
+}
+
+.rwd-table tr:hover{
+  background-color: #F0F2F3;
+}
+
+.rwd-table th {
+  display: none;
+  background: #ddd;
+  border-bottom: 1px solid;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+
+@media (min-width: 480px) {
+	
+
+	.rwd-table td:before {
+		display: none;
+	}
+
+	.rwd-table th, .rwd-table td {
+		display: table-cell;
+	}
+
+	.rwd-table th:hover {
+		border-bottom: 1px solid red;
+	}
+  
+}
