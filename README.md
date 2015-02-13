@@ -2,7 +2,7 @@
 
 Tabela HTML editável usando CAKEPHP + jQuery + AJAX
 
-[DEMO](http://10.11.0.3/tables/) - Demonstração
+[DEMO](http://187.6.250.99/tables/) - Demonstração
 
 # Utilização
 
